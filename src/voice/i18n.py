@@ -1,0 +1,52 @@
+# Hindi-first bilingual prompt pack
+
+PROMPTS = {
+    'hi': {
+        'trade_summary': "प्रस्तावित ट्रेड समीक्षा के लिए तैयार है।",
+        'symbol': "सिंबल",
+        'direction': "दिशा",
+        'suggested_allocation': "सुझाया गया आवंटन",
+        'entry': "प्रवेश मूल्य",
+        'stop_loss': "स्टॉप-लॉस",
+        'rationale': "कारण",
+        'backtest': "बैकटेस्ट",
+        'ask_allocation': "मैं इस ट्रेड के लिए कितना पूंजी आवंटित करूँ? आप प्रतिशत या डॉलर में बताएं, या 'सुझाव अनुसार' कहें।",
+        'readback': "आपने {amount} {unit} आवंटित करने का निर्णय लिया है। क्या यह सही है? 'पुष्टि करें' कहें, 'बदलें' कहें, या 'रद्द करें' कहें।",
+        'final_confirm': "अंतिम पुष्टिकरण: {symbol} {direction} ट्रेड के लिए {allocation} आवंटन और स्टॉप-लॉस {stop} के साथ ट्रेड करें। 'पुष्टि करें' कहें या 'रद्द करें' कहें।",
+        'confirm': "पुष्टि करें",
+        'cancel': "रद्द करें",
+        'use_suggested': "सुझाव अनुसार",
+        'pause': "ट्रेडिंग रोकें",
+        'resume': "ट्रेडिंग फिर से शुरू करें",
+        'emergency_stop': "आपातकालीन स्टॉप",
+        'cancelled': "ट्रेड रद्द किया गया। कोई ट्रेड नहीं लगाया गया।",
+        'blocked': "मैं यह ट्रेड नहीं लगाऊँगा क्योंकि {reason}",
+        'timeout': "कोई उत्तर नहीं मिला। सुरक्षा कारणों से ट्रेड प्रस्ताव रद्द किया गया।",
+        'confirm_success': "पुष्टि की गई। पेपर मोड में ऑर्डर दिया जा रहा है।",
+        'override': "मैं यह आदेश रद्द करता हूँ क्योंकि {reason}। कोई ऑर्डर नहीं लगाया गया।"
+    },
+    'en': {
+        'trade_summary': "Proposed trade ready for review.",
+        'symbol': "Symbol",
+        'direction': "Direction",
+        'suggested_allocation': "Suggested allocation",
+        'entry': "Entry",
+        'stop_loss': "Stop-loss",
+        'rationale': "Rationale",
+        'backtest': "Backtest",
+        'ask_allocation': "How much capital should I allocate? Say a percent or dollar amount, or say 'use suggested'.",
+        'readback': "You chose {amount} {unit}. Is that correct? Say 'confirm', 'modify', or 'cancel'.",
+        'final_confirm': "Final confirmation required: {symbol} {direction} with {allocation} allocation and stop-loss at {stop}. Say 'confirm' or 'cancel'.",
+        'confirm': "confirm",
+        'cancel': "cancel",
+        'use_suggested': "use suggested",
+        'pause': "pause trading",
+        'resume': "resume trading",
+        'emergency_stop': "emergency stop",
+        'cancelled': "Trade canceled. No trade was placed.",
+        'blocked': "I will not place this trade because {reason}",
+        'timeout': "No response received. Cancelling the trade proposal for safety.",
+        'confirm_success': "Confirmed. Placing order in paper mode.",
+        'override': "I am overriding and will not place the order because {reason}. No order was placed."
+    }
+}
