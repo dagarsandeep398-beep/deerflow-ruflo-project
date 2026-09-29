@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  agent:
+    build: .
+    container_name: ai-trading-agent
+    ports:
+      - "8000:8000"
+    environment:
+      PORT: 8000
+      AGENT_MODE: paper
+      DEFAULT_LANGUAGE: hi
+      LIVE_MODE_ENABLED: "false"
+      MAX_TRADE_ALLOCATION_PCT: "2.0"
+      MAX_DAILY_LOSS_PCT: "2.0"
+    env_file:
+      - .env
+    restart: unless-stopped
